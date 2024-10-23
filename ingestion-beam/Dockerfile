@@ -1,5 +1,5 @@
 # Use maven image to build the jars that will be included via COPY later.
-FROM maven:3-jdk-11 AS build
+FROM maven:3-jdk-14 AS build
 WORKDIR /app/ingestion-beam
 COPY pom.xml /app/pom.xml
 COPY ingestion-beam/pom.xml /app/ingestion-beam/pom.xml
